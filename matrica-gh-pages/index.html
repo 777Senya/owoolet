@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <link rel="stylesheet" href=".css" type="text/css" media="(max-width: 450px)">
+    <link href="https://fonts.googleapis.com/css?family=Yellowtail" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img id="logo" src="logo.png">
+            </div>
+            <div class="name">
+                <p><a href="index.html">OWallet</a></p>
+                <p id="lozung">Ніколи не втрачайте свій гаманець знову!</p>
+            </div>
+            <div id="number">
+                <p id="time">Кожного дня: з 10:00 до 20:00</p>
+                <p class="number">+380951352214</p>
+            </div>
+            <div class="feedback">
+                <!-- Задний прозрачный фон-->
+                <div onclick="show('none')" id="wrap" style="display: none;"></div>
+                <div id="window" style="display: none;">
+
+                    <!-- Картинка крестика-->
+                    <img class="close" onclick="show('none')" src="close.png">
+
+                    <!-- Картинка ipad'a-->
+                    <div class="position_form">
+                        <form action="https://formspree.io/senchina_voscom@mail.ru" method="POST" id="myForm">
+                            <div id="form">
+                                <label for="name">Ваше ім'я:<span class="star">*</span></label>
+                                <input type="text" name="name" id="name" required placeholder="Ім'я" /><span></span>
+                                <label for="surname">Ваша прізвище:<span class="star">*</span></label>
+                                <input type="text" name="surname" id="surname" required placeholder="Прізвище" /><span></span>
+                                <label for="tel">Ваш номер телефона:<span class="star">*</span></label>
+                                <input type="tel" name="tel" id="tel" required placeholder="+38ХХХХХХХХХХ" pattern="^((8|\+3)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" /><span></span>
+                                <label for="email">Email:<span class="star">*</span></label>
+                                <input type="email" name="email" id="email" required placeholder="simple@example.com" /><span></span><br>
+                                <textarea name="comment" rows="8" cols="32" placeholder="Вказати номер моделі, адресу одержувача, відділення Нової Почти"></textarea><br>
+                                <input type="hidden" name="_next" value="index.html" />
+                                <div class="position_send">
+                                    <input type="submit" name="submit" class="submit" id="submit" value="Отправить" />
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <a href="#" onclick="show('block')">Замовити</a>
+            </div>
+        </header>
+    </div>
+    <img src="header.png">
+    <section>
+        <div class="about_us">
+            <h2 class="zag">Трішки про Нас</h2>
+            <p>
+                Вітаємо Вас на нашому сайті!<br><br> Мы - стремительно развивающаяся компания, не первый год работающая на рынке металлообрабатывающего оборудования и станков. За это время мы зарекомендовали себя как надежных партнеров и проверенных
+                поставщиков.
+                <br><br> Основной целью в своей работе мы ставим содействие развитию промышленного сектора, помощь предприятиям в оснащении и оборудовании, предоставление всех условий для использования современных технологий на производстве. <br> <br>                Мы реализуем продукцию крупнейших производителей, таких как Manford, Toyoda, Юнимаш, Frank Phoenix International, Jainnher Machine и пр. Работая с ними напрямую, мы можем позволить устанавливать максимально низкие цены на реализуемую продукцию.
+                <br><br> Вы можете не сомневаться в качестве - все реализуемое оборудование проходит через наших квалифицированных сервисных инженеров и технологов.
+            </p>
+        </div>
+    </section>
+    <section id="machine">
+        <div id="product">
+            <div class="oboryd">
+                <div class="img_oboryd">
+                    <a href="wallets-woolet-2-0-black-opt_1024x1024.jpg"><img src="wallets.jpg" class="img_oboryd"></a>
+                </div>
+                <div class="opus">
+                    <h3>OWallet Black</h3>
+                    <div class="text_oboryd">Гаманець, який зберігає вашу готівку і картки в безпеці. Розумний аксесуар для кожної сучасної людини.</div>
+                    <br>
+                    <h4>100 $</h4>
+                </div>
+            </div>
+            <div class="oboryd">
+                <div class="img_oboryd">
+                    <a href="wallets-woolet-2-0-brown-1_1024x1024.jpg"><img src="wallets2.jpg" class="img_oboryd"></a>
+                </div>
+                <div class="opus">
+                    <h3>OWallet Brown</h3>
+                    <div class="text_oboryd">Гаманець, який зберігає вашу готівку і картки в безпеці. Розумний аксесуар для кожної сучасної людини.</div>
+                    <br>
+                    <h4>100 $</h4>
+                </div>
+            </div>
+            <div class="oboryd">
+                <div class="img_oboryd">
+                    <a href="wallets-eco-woolet-black-1_1024x1024.png"><img src="wallets-eco.png" class="img_oboryd"></a>
+                </div>
+                <div class="opus">
+                    <h3>OWallet ECO Black</h3>
+                    <div class="text_oboryd">Гаманець, який зберігає вашу готівку і картки в безпеці. Розумний аксесуар для кожної сучасної людини.</div>
+                    <br>
+                    <h4>100 $</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="price">
+        <h2 class="zag">Услуги и цены</h2>
+        <table class="table table-striped">
+            <tr>
+                <td>
+                    №
+                </td>
+                <td>
+                    Найменування товару, послуги 
+                </td>
+                <td>
+                    Од. вим.
+                </td>
+                <td>
+                    Ціна ($)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    1
+                </td>
+                <td>
+                    Гаманець чорний, шкіра (9х10)
+                </td>
+                <td>
+                    шт.
+                </td>
+                <td>
+                    100
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    2
+                </td>
+                <td>
+                    Гаманець каучуковий (9х10)
+                </td>
+                <td>
+                    шт.
+                </td>
+                <td>
+                    100
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    3
+                </td>
+                <td>
+                    Гаманець коричневий, шкіра (9х10)
+                </td>
+                <td>
+                    шт.
+                </td>
+                <td>
+                    100
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    4
+                </td>
+                <td>
+                    Гравірування
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    10
+                </td>
+            </tr>
+        </table>
+
+    </section>
+    <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1081.8143616333114!2d24.028197743824062!3d49.84240731694958!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add72793fe149%3A0x19aa59cb67ae25ce!2z0L_RgNC-0YHQv9C10LrRgiDQodCy0L7QsdC-0LTQuCwgMTgsINCb0YzQstGW0LIsINCb0YzQstGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjA!5e0!3m2!1suk!2sua!4v1494458867015" width="100%" height="591" frameborder="0" style="border:0"
+            allowfullscreen></iframe>
+        <div class="contact-inner">
+            <div class="contact-block">
+                <span class="glyphicon glyphicon-triangle-right strelka" aria-hidden="true"></span>
+                <div class="block-title">Контакти</div>
+                <div class="contacts">
+                    <div class="address"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>Україна, м. Львів, пр. Свободи 18, 307</div>
+                    <div class="phones"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+380951352214</div>
+                    <div class="mail"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>O_Wallet@gmail.com</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="name_firm">
+            <p>OWallet</p>
+        </div>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="feedback.js"></script>
+    <script type="text/javascript" src="botton.js"></script>
+    <script type="text/javascript" src="window.js"></script>
+</body>
+
+</html>
